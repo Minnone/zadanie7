@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заметки | Минималистичный редактор</title>
+  <link rel="manifest" href="/manifest.json"> 
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1><i class="fas fa-book-open"></i> Умные заметки</h1>
+      <div id="offline-status" class="offline-status">
+        <i class="fas fa-wifi"></i> Офлайн-режим
+      </div>
+    </header>
+
+    <main class="app-main">
+      <div class="note-editor">
+        <textarea id="note-input" placeholder="Начните писать здесь..."></textarea>
+        <button id="add-note" class="primary-button">
+          <i class="fas fa-plus"></i> Создать заметку
+        </button>
+      </div>
+
+      <div class="notes-container">
+        <h2><i class="fas fa-list"></i> Мои заметки</h2>
+        <div id="notes-list" class="notes-grid">
+          <!-- Заметки будут добавляться здесь -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>© 2023 Умные заметки | Все права защищены</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
